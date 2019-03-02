@@ -1,9 +1,14 @@
 # depslib dependency file v1.0
-1551565009 source:c:\users\nashad\desktop\projetannuel\project c\nowast\main.c
+1551567678 source:c:\users\nashad\desktop\projetannuel\project c\nowast\main.c
 	<stdlib.h>
 	<gtk/gtk.h>
+	<winsock.h>
+	<MYSQL/mysql.h>
+	"connectSQL.h"
 
 1551564745 source:c:\users\nashad\desktop\projetannuel\project c\nowast\subscribe.c
 	<stdlib.h>
 	<gtk/gtk.h>
+
+1551568111 c:\users\nashad\desktop\projetannuel\project c\nowast\connectsql.h
 

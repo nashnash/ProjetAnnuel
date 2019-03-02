@@ -1,8 +1,15 @@
 #include <stdlib.h>
 #include <gtk/gtk.h>
+#include <winsock.h>
+#include <MYSQL/mysql.h>
+#include "connectSQL.h"
 
 int main(int argc, char **argv)
 {
+MYSQL mysql;
+        mysql_init(&mysql);
+        mysql_options(&mysql,MYSQL_READ_DEFAULT_GROUP,"option");
+connectdb();
     GtkWidget *pWindow;
     GtkWidget *pVBox;
     GtkWidget *pFrame;
