@@ -4,36 +4,50 @@
 int main(int argc, char **argv)
 {
     GtkWidget *pWindow;
-    GtkWidget *pTable;
-    GtkWidget *pButton[4];
-    GtkWidget* gtk_frame_new(const gchar *label);
+    GtkWidget *pVBox;
+    GtkWidget *pFrame;
+    GtkWidget *pVBoxFrame;
+
+    GtkWidget *pEntry;
+    GtkWidget *pLabel;
+    gchar *sUtf8;
 
     gtk_init(&argc, &argv);
 
     pWindow = gtk_window_new(GTK_WINDOW_TOPLEVEL);
-    gtk_window_set_default_size(GTK_WINDOW(pWindow), 900, 400);
-    gtk_window_set_title(GTK_WINDOW(pWindow), "WeatherStation");
+    /* On ajoute un espace de 5 sur les bords de la fenetre */
+    gtk_container_set_border_width(GTK_CONTAINER(pWindow), 5);
+    gtk_window_set_title(GTK_WINDOW(pWindow), "GtkEntry");
+    gtk_window_set_default_size(GTK_WINDOW(pWindow), 320, 200);
     g_signal_connect(G_OBJECT(pWindow), "destroy", G_CALLBACK(gtk_main_quit), NULL);
-    void gtk_frame_set_label(GtkFrame *frame, const gchar *label);
-    G_CONST_RETURN gchar* gtk_frame_get_label(GtkFrame *frame);
-GtkShadowType gtk_frame_get_shadow_type(GtkFrame *frame);
-GtkWidget* gtk_hseparator_new(void);
-GtkWidget* gtk_vseparator_new(void);
 
-    /* Creation et insertion de la table 3 lignes 2 colonnes */
-    pTable=gtk_table_new(2,2,TRUE);
-    gtk_container_add(GTK_CONTAINER(pWindow), GTK_WIDGET(pTable));
+    pVBox = gtk_vbox_new(TRUE, 0);
+    gtk_container_add(GTK_CONTAINER(pWindow), pVBox);
 
-    /* Creation des boutons */
-    pButton[0]= gtk_button_new_with_label("Heure");
-    pButton[1]= gtk_button_new_with_label("Temp");
+    /* Creation du premier GtkFrame */
+    pFrame = gtk_frame_new("Identifiant");
+    gtk_box_pack_start(GTK_BOX(pVBox), pFrame, TRUE, FALSE, 0);
+
+    /* Creation et insertion d une boite pour le premier GtkFrame */
+    pVBoxFrame = gtk_vbox_new(TRUE, 0);
+    gtk_container_add(GTK_CONTAINER(pFrame), pVBoxFrame);
+
+    /* Creation et insertion des elements contenus dans le premier GtkFrame */
+    pLabel = gtk_label_new("Entrez votre nom d'utilisateur :");
+    gtk_box_pack_start(GTK_BOX(pVBoxFrame), pLabel, TRUE, FALSE, 0);
+    pEntry = gtk_entry_new();
+    gtk_box_pack_start(GTK_BOX(pVBoxFrame), pEntry, TRUE, FALSE, 0);
+
+    sUtf8 = g_locale_to_utf8("Entrez votre mot de passe :", -1, NULL, NULL, NULL);
+    pLabel = gtk_label_new(sUtf8);
+    g_free(sUtf8);
+    gtk_box_pack_start(GTK_BOX(pVBoxFrame), pLabel, TRUE, FALSE, 0);
+    pEntry = gtk_entry_new();
+    gtk_box_pack_start(GTK_BOX(pVBoxFrame), pEntry, TRUE, FALSE, 0);
 
 
-    /* Insertion des boutons */
-    gtk_table_attach_defaults(GTK_TABLE(pTable), pButton[0],
-        0, 1, 0, 1);
-            gtk_table_attach_defaults(GTK_TABLE(pTable), pButton[1],
-        1, 2, 0, 1);
+
+
 
 
     gtk_widget_show_all(pWindow);
