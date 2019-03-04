@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1551572853 source:c:\users\nashad\desktop\projetannuel\project c\nowast\main.c
+1551573169 source:c:\users\nashad\desktop\projetannuel\project c\nowast\main.c
 	<stdlib.h>
 	<gtk/gtk.h>
 	<winsock.h>

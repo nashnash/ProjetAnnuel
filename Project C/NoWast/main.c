@@ -1,8 +1,11 @@
 #include <stdlib.h>
 #include <gtk/gtk.h>
-#include <winsock.h>
+
+#include <winsock2.h>
 #include <MYSQL/mysql.h>
 #include "connectSQL.h"
+#include <curl/curl.h>
+#include <stdio.h>
 
 
 void on_activate_entry(GtkWidget *pEntry, gpointer data);
@@ -10,6 +13,7 @@ void on_copier_button(GtkWidget *pButton, gpointer data);
 
 int main(int argc, char **argv)
 {
+
 MYSQL mysql;
         mysql_init(&mysql);
         mysql_options(&mysql,MYSQL_READ_DEFAULT_GROUP,"option");
