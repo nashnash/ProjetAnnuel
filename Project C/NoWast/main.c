@@ -3,6 +3,9 @@
 #include <openssl/ssl.h>
 #include <curl/curl.h>
 
+void on_activate_entry(GtkWidget *pEntry, gpointer data);
+void on_copier_button(GtkWidget *pButton, gpointer data);
+
 
 GtkWidget *Bar;
 
@@ -61,8 +64,16 @@ void *my_thread(void *ptr)
 
 int main(int argc, char **argv)
 {
-  GtkWidget *Window, *Frame, *Frame2;
-  GtkAdjustment *adj;
+  GtkWidget *Window;
+
+  GtkWidget *pVBox;
+    GtkWidget *pFrame;
+    GtkWidget *pVBoxFrame;
+GtkWidget *pButton;
+    GtkWidget *pEntry;
+    GtkWidget *pLabel;
+
+
 
   /* Must initialize libcurl before any threads are started */
   curl_global_init(CURL_GLOBAL_ALL);
@@ -72,16 +83,50 @@ int main(int argc, char **argv)
 
   gtk_init(&argc, &argv);
   Window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
-  Frame = gtk_frame_new(NULL);
-  gtk_frame_set_shadow_type(GTK_FRAME(Frame), GTK_SHADOW_OUT);
-  gtk_container_add(GTK_CONTAINER(Window), Frame);
-  Frame2 = gtk_frame_new(NULL);
-  gtk_frame_set_shadow_type(GTK_FRAME(Frame2), GTK_SHADOW_IN);
-  gtk_container_add(GTK_CONTAINER(Frame), Frame2);
-  gtk_container_set_border_width(GTK_CONTAINER(Frame2), 5);
-  adj = (GtkAdjustment*)gtk_adjustment_new(0, 0, 100, 0, 0, 0);
-  Bar = gtk_progress_bar_new_with_adjustment(adj);
-  gtk_container_add(GTK_CONTAINER(Frame2), Bar);
+    /* On ajoute un espace de 5 sur les bords de la fenetre */
+    gtk_container_set_border_width(GTK_CONTAINER(Window), 5);
+    gtk_window_set_title(GTK_WINDOW(Window), "GtkEntry");
+    gtk_window_set_default_size(GTK_WINDOW(Window), 320, 200);
+
+
+    g_signal_connect(G_OBJECT(Window), "destroy", G_CALLBACK(gtk_main_quit), NULL);
+
+    pVBox = gtk_vbox_new(TRUE, 0);
+    gtk_container_add(GTK_CONTAINER(Window), pVBox);
+
+    /* Creation du premier GtkFrame */
+    pFrame = gtk_frame_new("NoWaste");
+    gtk_box_pack_start(GTK_BOX(pVBox), pFrame, TRUE, FALSE, 0);
+
+    /* Creation et insertion d une boite pour le premier GtkFrame */
+    pVBoxFrame = gtk_vbox_new(TRUE, 0);
+    gtk_container_add(GTK_CONTAINER(pFrame), pVBoxFrame);
+
+
+
+    /* Creation et insertion des elements contenus dans le premier GtkFrame */
+    pLabel = gtk_label_new("Scanner le code barre de votre produit");
+    gtk_box_pack_start(GTK_BOX(pVBoxFrame), pLabel, TRUE, FALSE, 0);
+    pEntry = gtk_entry_new();
+    gtk_box_pack_start(GTK_BOX(pVBoxFrame), pEntry, TRUE, FALSE, 0);
+
+
+ pButton = gtk_button_new_with_label("VALIDER LA SAISIE");
+    gtk_box_pack_start(GTK_BOX(pVBox), pButton, TRUE, FALSE, 0);
+
+     pLabel = gtk_label_new(NULL);
+    gtk_box_pack_start(GTK_BOX(pVBox), pLabel, TRUE, FALSE, 0);
+
+
+/* Connexion du signal "activate" du GtkEntry */
+    g_signal_connect(G_OBJECT(pEntry), "activate", G_CALLBACK(on_activate_entry), (GtkWidget*) pLabel);
+
+
+    /* Connexion du signal "clicked" du GtkButton */
+    /* La donnee supplementaire est la GtkVBox pVBox */
+    g_signal_connect(G_OBJECT(pButton), "clicked", G_CALLBACK(on_copier_button), (GtkWidget*) pVBox);
+
+
   gtk_widget_show_all(Window);
 
   if(!g_thread_create(&my_thread, argv[1], FALSE, NULL) != 0)
@@ -94,3 +139,23 @@ int main(int argc, char **argv)
   return 0;
 }
 
+/* Fonction callback execute lors du signal "activate" */
+void on_activate_entry(GtkWidget *pEntry, gpointer data)
+{
+    const gchar *sText;
+
+    /* Recuperation du texte contenu dans le GtkEntry */
+    sText = gtk_entry_get_text(GTK_ENTRY(pEntry));
+
+    /* Modification du texte contenu dans le GtkLabel */
+    gtk_label_set_text(GTK_LABEL((GtkWidget*)data), sText);
+
+
+}
+
+/* Fonction callback executee lors du signal "clicked" */
+void on_copier_button(GtkWidget *pButton, gpointer data)
+{
+
+
+}
