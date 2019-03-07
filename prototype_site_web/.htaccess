@@ -1,0 +1,6 @@
+<FilesMatch "backofficeuser.php">
+AuthUserFile "/homepages/13/d736441227/htdocs/.htpasswd"
+AuthName "Cette page possede du contenu securise"
+AuthType Basic
+Require valid-user
+</FilesMatch>

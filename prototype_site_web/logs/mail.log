@@ -1,0 +1,58 @@
+2018-05-14 19:22:39 u93491926 zLAMOU-1eKQFy2U5x-00xoJD |< REMOTE=79.91.73.142 SCRIPT=/inscription.php -- /usr/sbin/sendmail -t -i
+2018-05-14 19:22:39 u93491926 zLAMOU-1eKQFy2U5x-00xoJD EE no valid recipient addresses
+2018-05-14 19:28:42 u93491926 zM2BjZ-1fCFfM1Zpy-0079Rj |< REMOTE=79.91.73.142 SCRIPT=/inscription.php -- /usr/sbin/sendmail -t -i
+2018-05-14 19:28:42 u93491926 zM2BjZ-1fCFfM1Zpy-0079Rj ** oqdnc@gdgdg: invalid address
+2018-05-14 19:28:42 u93491926 zM2BjZ-1fCFfM1Zpy-0079Rj EE no valid recipient addresses
+2018-05-15 05:35:39 u93491926 zMFN0n-1f6vUv2LvO-00BgO0 |< REMOTE=78.192.152.200 SCRIPT=/inscription.php -- /usr/sbin/sendmail -t -i
+2018-05-15 05:35:39 u93491926 zMFN0n-1f6vUv2LvO-00BgO0 EE no valid recipient addresses
+2018-05-15 05:37:49 u93491926 zLrPJq-1f28S03Gjt-00J0v0 |< REMOTE=78.192.152.200 SCRIPT=/inscription.php -- /usr/sbin/sendmail -t -i
+2018-05-15 05:37:49 u93491926 zLrPJq-1f28S03Gjt-00J0v0 <= S=cgi-mailer-bounces-736441227@kundenserver.de SZ=814 D=0 SID=736441227
+2018-05-15 05:37:50 u93491926 zLrPJq-1f28S03Gjt-00J0v0 => b86l5@gifto12.com msmtp.kundenserver.de[172.19.35.7] 250 Requested mail action okay, completed: id=0M16WO-1ePVqP3Mpk-00tG7l
+2018-05-15 05:40:58 u93491926 zLnXhI-1exAOT3ja3-00O0eo |< REMOTE="2a01:e34:ec09:8c80:1518:4845:4ad3:2058" SCRIPT=/backofficeuser.php -- /usr/sbin/sendmail -t -i
+2018-05-15 05:40:58 u93491926 zLnXhI-1exAOT3ja3-00O0eo EE no valid recipient addresses
+2018-05-15 05:41:04 u93491926 zLUDd8-1efEKP1wqP-00e27p |< REMOTE="2a01:e34:ec09:8c80:1518:4845:4ad3:2058" SCRIPT=/backofficeuser.php -- /usr/sbin/sendmail -t -i
+2018-05-15 05:41:04 u93491926 zLUDd8-1efEKP1wqP-00e27p EE no valid recipient addresses
+2018-05-15 05:42:39 u93491926 zLvTe1-1en1xt19QA-00VTt1 |< REMOTE="2a01:e34:ec09:8c80:1518:4845:4ad3:2058" SCRIPT=/inscription.php -- /usr/sbin/sendmail -t -i
+2018-05-15 05:42:39 u93491926 zLvTe1-1en1xt19QA-00VTt1 <= S=cgi-mailer-bounces-736441227@kundenserver.de SZ=870 D=0 SID=736441227
+2018-05-15 05:42:39 u93491926 zLvTe1-1en1xt19QA-00VTt1 => ryutb@storiqax.com msmtp.kundenserver.de[172.19.35.7] 250 Requested mail action okay, completed: id=0LzUX8-1eDyGL1Fqc-014jEG
+2018-05-15 05:43:13 u93491926 zLcz3W-1eWSrw1G65-00mqow |< REMOTE="2a01:e34:ec09:8c80:1518:4845:4ad3:2058" SCRIPT=/backofficeuser.php -- /usr/sbin/sendmail -t -i
+2018-05-15 05:43:13 u93491926 zLcz3W-1eWSrw1G65-00mqow EE no valid recipient addresses
+2018-05-15 05:48:13 u93491926 zLvCf6-1enJOQ1VSt-00VgH3 |< REMOTE="2a01:e34:ec09:8c80:1518:4845:4ad3:2058" SCRIPT=/inscription.php -- /usr/sbin/sendmail -t -i
+2018-05-15 05:48:13 u93491926 zLvCf6-1enJOQ1VSt-00VgH3 <= S=cgi-mailer-bounces-736441227@kundenserver.de SZ=875 D=0 SID=736441227
+2018-05-15 05:48:14 u93491926 zLvCf6-1enJOQ1VSt-00VgH3 => gupoleyoy@bitwhites.top msmtp.kundenserver.de[172.19.35.7] 250 Requested mail action okay, completed: id=0LpCLN-1egKy01bOv-00fDA4
+2018-05-15 05:48:38 u93491926 zLEmFK-1ePm0739a5-00tQLg |< REMOTE="2a01:e34:ec09:8c80:1518:4845:4ad3:2058" SCRIPT=/backofficeuser.php -- /usr/sbin/sendmail -t -i
+2018-05-15 05:48:38 u93491926 zLEmFK-1ePm0739a5-00tQLg <= S=cgi-mailer-bounces-736441227@kundenserver.de SZ=856 D=0 SID=736441227
+2018-05-15 05:48:38 u93491926 zLEmFK-1ePm0739a5-00tQLg => test@test.fr msmtp.kundenserver.de[172.19.35.7] 250 Requested mail action okay, completed: id=0LrEhY-1eHpv83Fz2-0134aR
+2018-05-15 05:50:01 u93491926 zLQHlM-1eIfVK2Aqp-010bjn |< REMOTE="2a01:e34:ec09:8c80:1518:4845:4ad3:2058" SCRIPT=/backofficeuser.php -- /usr/sbin/sendmail -t -i
+2018-05-15 05:50:01 u93491926 zLQHlM-1eIfVK2Aqp-010bjn <= S=cgi-mailer-bounces-736441227@kundenserver.de SZ=856 D=0 SID=736441227
+2018-05-15 05:50:01 u93491926 zLQHlM-1eIfVK2Aqp-010bjn => test@test.fr msmtp.kundenserver.de[172.19.35.7] 250 Requested mail action okay, completed: id=0LZZE4-1eZVIb2H64-00lS2P
+2018-05-15 05:50:48 u93491926 zM9tuL-1fIzU60etK-001k84 |< REMOTE="2a01:e34:ec09:8c80:1518:4845:4ad3:2058" SCRIPT=/inscription.php -- /usr/sbin/sendmail -t -i
+2018-05-15 05:50:48 u93491926 zM9tuL-1fIzU60etK-001k84 <= S=cgi-mailer-bounces-736441227@kundenserver.de SZ=875 D=0 SID=736441227
+2018-05-15 05:50:48 u93491926 zM9tuL-1fIzU60etK-001k84 => adamsakanni56@gmail.com msmtp.kundenserver.de[172.19.35.7] 250 Requested mail action okay, completed: id=0MMLbF-1fDBeX0l9p-0083Lv
+2018-05-15 05:50:56 u93491926 zLYdTy-1ejeGf14Qj-00ZhOy |< REMOTE="2a01:e34:ec09:8c80:1518:4845:4ad3:2058" SCRIPT=/backofficeuser.php -- /usr/sbin/sendmail -t -i
+2018-05-15 05:50:56 u93491926 zLYdTy-1ejeGf14Qj-00ZhOy <= S=cgi-mailer-bounces-736441227@kundenserver.de SZ=856 D=0 SID=736441227
+2018-05-15 05:50:56 u93491926 zLYdTy-1ejeGf14Qj-00ZhOy => test@test.fr msmtp.kundenserver.de[172.19.35.7] 250 Requested mail action okay, completed: id=0LmiRI-1edqyy1AhI-00h7nn
+2018-05-15 05:51:03 u93491926 zM3pMd-1fE1953eAS-004TEl |< REMOTE="2a01:e34:ec09:8c80:1518:4845:4ad3:2058" SCRIPT=/backofficeuser.php -- /usr/sbin/sendmail -t -i
+2018-05-15 05:51:03 u93491926 zM3pMd-1fE1953eAS-004TEl <= S=cgi-mailer-bounces-736441227@kundenserver.de SZ=856 D=0 SID=736441227
+2018-05-15 05:51:03 u93491926 zM3pMd-1fE1953eAS-004TEl => test@test.fr msmtp.kundenserver.de[172.19.35.7] 250 Requested mail action okay, completed: id=0MYpHi-1en2MX3kBe-00VNzI
+2018-05-15 05:54:48 u93491926 zLe5W6-1eXZef0AMv-00nykg |< REMOTE="2a01:e34:ec09:8c80:1518:4845:4ad3:2058" SCRIPT=/inscription.php -- /usr/sbin/sendmail -t -i
+2018-05-15 05:54:48 u93491926 zLe5W6-1eXZef0AMv-00nykg <= S=cgi-mailer-bounces-736441227@kundenserver.de SZ=875 D=0 SID=736441227
+2018-05-15 05:54:48 u93491926 zLe5W6-1eXZef0AMv-00nykg => adamsakanni56@gmail.com msmtp.kundenserver.de[172.19.35.7] 250 Requested mail action okay, completed: id=0MEg6X-1f3Jy50GjJ-00Fn0A
+2018-05-15 05:55:03 u93491926 zLBSr4-1eMSmA2oft-00yx1N |< REMOTE="2a01:e34:ec09:8c80:1518:4845:4ad3:2058" SCRIPT=/backofficeuser.php -- /usr/sbin/sendmail -t -i
+2018-05-15 05:55:03 u93491926 zLBSr4-1eMSmA2oft-00yx1N <= S=cgi-mailer-bounces-736441227@kundenserver.de SZ=857 D=0 SID=736441227
+2018-05-15 05:55:03 u93491926 zLBSr4-1eMSmA2oft-00yx1N => test@test.fr msmtp.kundenserver.de[172.19.35.7] 250 Requested mail action okay, completed: id=0Lo6mL-1ed1gs2uaH-00gICe
+2018-05-15 05:55:30 u93491926 zM1MWM-1fC5Ot3ept-006tPa |< REMOTE="2a01:e34:ec09:8c80:1518:4845:4ad3:2058" SCRIPT=/backofficeuser.php -- /usr/sbin/sendmail -t -i
+2018-05-15 05:55:30 u93491926 zM1MWM-1fC5Ot3ept-006tPa <= S=cgi-mailer-bounces-736441227@kundenserver.de SZ=857 D=0 SID=736441227
+2018-05-15 05:55:30 u93491926 zM1MWM-1fC5Ot3ept-006tPa => test@test.fr msmtp.kundenserver.de[172.19.35.7] 250 Requested mail action okay, completed: id=0Mb5Kx-1eyHe53l6p-00KiYn
+2018-05-15 05:59:14 u93491926 zLGy6g-1eRz1P0hs1-00rKAJ |< REMOTE="2a01:e34:ec09:8c80:1518:4845:4ad3:2058" SCRIPT=/inscription.php -- /usr/sbin/sendmail -t -i
+2018-05-15 05:59:14 u93491926 zLGy6g-1eRz1P0hs1-00rKAJ <= S=cgi-mailer-bounces-736441227@kundenserver.de SZ=875 D=0 SID=736441227
+2018-05-15 05:59:14 u93491926 zLGy6g-1eRz1P0hs1-00rKAJ => adamsakanni56@gmail.com msmtp.kundenserver.de[172.19.35.7] 250 Requested mail action okay, completed: id=0Lle6K-1ejNPm0oFM-00ZPu8
+2018-05-15 08:33:15 u93491926 zM2jxr-1fCwgJ2IWa-007oAD |< REMOTE=94.228.190.38 SCRIPT=/inscription.php -- /usr/sbin/sendmail -t -i
+2018-05-15 08:33:15 u93491926 zM2jxr-1fCwgJ2IWa-007oAD <= S=cgi-mailer-bounces-736441227@kundenserver.de SZ=817 D=0 SID=736441227
+2018-05-15 08:33:15 u93491926 zM2jxr-1fCwgJ2IWa-007oAD => progetannuel@hotmail.fr msmtp.kundenserver.de[172.19.35.7] 250 Requested mail action okay, completed: id=0M5Ksl-1eLwM02NEl-00zUnX
+2018-05-15 09:03:35 u93491926 zLgJVa-1eZZ0M1cTN-00lpOK |< REMOTE=94.228.190.38 SCRIPT=/verifcontact.php -- /usr/sbin/sendmail -t -i
+2018-05-15 09:03:35 u93491926 zLgJVa-1eZZ0M1cTN-00lpOK <= S=cgi-mailer-bounces-736441227@kundenserver.de SZ=806 D=0 SID=736441227
+2018-05-15 09:03:35 u93491926 zLgJVa-1eZZ0M1cTN-00lpOK => cuisinevie@outlook.fr msmtp.kundenserver.de[172.19.35.7] 250 Requested mail action okay, completed: id=0M4Vnk-1eM8iZ1njw-00yfRq
+2018-05-15 13:02:12 u93491926 zMCs2O-1f51311idP-00E50F |< REMOTE=82.233.11.227 SCRIPT=/inscription.php -- /usr/sbin/sendmail -t -i
+2018-05-15 13:02:12 u93491926 zMCs2O-1f51311idP-00E50F <= S=cgi-mailer-bounces-736441227@kundenserver.de SZ=803 D=0 SID=736441227
+2018-05-15 13:02:12 u93491926 zMCs2O-1f51311idP-00E50F => dada@da.fr msmtp.kundenserver.de[172.19.35.7] 250 Requested mail action okay, completed: id=0MYXbd-1eo2QX1nZx-00V8Wj
