@@ -1,14 +1,52 @@
 # depslib dependency file v1.0
-1551573169 source:c:\users\nashad\desktop\projetannuel\project c\nowast\main.c
-	<stdlib.h>
+1551985714 source:c:\users\nashad\desktop\projetannuel\project c\nowast\main.c
+	<stdio.h>
 	<gtk/gtk.h>
-	<winsock.h>
-	<MYSQL/mysql.h>
-	"connectSQL.h"
+	<openssl/ssl.h>
+	<curl/curl.h>
 
 1551564745 source:c:\users\nashad\desktop\projetannuel\project c\nowast\subscribe.c
 	<stdlib.h>
 	<gtk/gtk.h>
 
 1551568444 c:\users\nashad\desktop\projetannuel\project c\nowast\connectsql.h
+
+1549371612 c:\users\nashad\desktop\projetannuel\project c\nowast\curl\include\curl\curl.h
+	"curlver.h"
+	"system.h"
+	<stdio.h>
+	<limits.h>
+	<osreldate.h>
+	<sys/types.h>
+	<time.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/select.h>
+	<sys/socket.h>
+	<sys/time.h>
+	<support/SupportDefs.h>
+	"easy.h"
+	"multi.h"
+	"urlapi.h"
+	"typecheck-gcc.h"
+
+1549432680 c:\users\nashad\desktop\projetannuel\project c\nowast\curl\include\curl\curlver.h
+
+1547035228 c:\users\nashad\desktop\projetannuel\project c\nowast\curl\include\curl\system.h
+	<winsock2.h>
+	<windows.h>
+	<ws2tcpip.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/poll.h>
+
+1540630854 c:\users\nashad\desktop\projetannuel\project c\nowast\curl\include\curl\easy.h
+
+1539865672 c:\users\nashad\desktop\projetannuel\project c\nowast\curl\include\curl\multi.h
+	"curl.h"
+
+1549371612 c:\users\nashad\desktop\projetannuel\project c\nowast\curl\include\curl\urlapi.h
+	"curl.h"
+
+1547554786 c:\users\nashad\desktop\projetannuel\project c\nowast\curl\include\curl\typecheck-gcc.h
 
