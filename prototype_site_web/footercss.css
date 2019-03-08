@@ -1,0 +1,66 @@
+ /*#fbIco{
+ 	margin-left: 80%; 
+ }
+ #instaIco{
+ 	margin-left: 50px; 
+ }
+ #twiIco{
+ 	margin-left: 70px; 
+ }*/
+.Copyright{
+  color: white;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #2EFE2E;/*Code couleur vert*/
+    color: white;
+}
+
+.modal-body {
+	padding:2px 16px;
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+   	border: 1px solid;
+    width: 80%;
+    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);*/
+	animation-name: animatetop;
+    animation-duration: .5s
+}
+
+/*petite animation qui fait bouger un élément graduellement*/
+@keyframes animatetop {
+    from {top: -300px;}
+    to {top: 0;}
+}
+
+/**************Pour le formulaire de contact********************/
+
+
+
+
+
+
+h1 {
+   text-align: center;
+   color: #a8a8a8;
+  
+}
+   
+ textarea {
+ 	
+      height: 126px;
+      width: 100%;
+ }
+
+#footer {
+bottom: 0;
+left: 0;
+right: 0;
+position: absolute;
+width: 100%;
+min-height: 100%;
+}

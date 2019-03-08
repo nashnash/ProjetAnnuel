@@ -1,0 +1,22 @@
+tr{
+	width:100%;
+}
+p{
+	font-size: 16px;
+	text-align: justify;
+	text-align-last: center;
+}
+
+.titreR{
+	color: black;
+}
+
+td{
+
+	font-size: 16px;
+	max-width: 100px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	table-layout: fixed;
+}
+

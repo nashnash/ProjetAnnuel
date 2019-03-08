@@ -1,0 +1,63 @@
+.section1 {
+background-image: url("img/dessert.JPG");
+background-size: cover;
+background-position: center;
+background-attachment:fixed;
+height: 50vh;
+}
+.section2{
+background-image: url("img/petitdej.JPG");
+background-size: cover;
+background-position: center;
+background-attachment:fixed;
+height: 50vh;
+}
+/*header [class*="col-"] {
+  margin-right: 500px;
+  width: 150px;
+  
+}*/
+.head{
+  min-height: 260px;
+  background-color: black;
+  opacity: 0.8;
+
+}
+.grey{
+  height: 250px;
+  background-color: black;
+  opacity: 0.75;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: relative;
+
+}
+.black{
+  color: black;
+}
+
+.photo{
+	margin-top: 70px;
+}
+.text{
+  display: inline-block;
+   
+}
+.bottom{
+  display: inline-block;
+  padding-right: 500px;
+}
+.titre{
+  color: white;
+}
+
+.coco{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+nav a {
+  margin: 5px;
+}
