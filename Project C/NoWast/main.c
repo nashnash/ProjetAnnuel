@@ -3,6 +3,8 @@
 #include <openssl/ssl.h>
 #include <curl/curl.h>
 
+#define URL_FORMAT "https://%s.openfoodfacts.org/cgi/search.pl?search_terms=%s&search_simple=1&jqm=1"
+#define URL_SIZE 256
 void on_activate_entry(GtkWidget *pEntry, gpointer data);
 void on_copier_button(GtkWidget *pButton, gpointer data);
 
@@ -42,8 +44,9 @@ void *my_thread(void *ptr)
   curl = curl_easy_init();
   if(curl) {
     const char *filename = "test.curl";
+      curl_easy_setopt(curl, CURLOPT_URL, "https://fr.openfoodfacts.org/api/v0/produit/3029330003533.json");
     outfile = fopen(filename, "wb");
-     curl_easy_setopt(curl, CURLOPT_CAINFO, "/etc/ssl/certs/ca-certificates.crt");
+
 
     curl_easy_setopt(curl, CURLOPT_URL, url);
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, outfile);
@@ -77,7 +80,7 @@ GtkWidget *pButton;
 
 
   /* Must initialize libcurl before any threads are started */
-  curl_global_init(CURL_GLOBAL_ALL);
+
 
   /* Init thread */
   g_thread_init(NULL);
@@ -147,8 +150,8 @@ void on_activate_entry(GtkWidget *pEntry, gpointer data)
     const gchar *sText1;
     const gchar *sText2;
 
-    sText1 = "https://fr.openfoodfacts.org/api/v0/produit/";
-    sText2 = ".json";
+    sText = "https://fr.openfoodfacts.org/api/v0/produit/";
+
 
     /* Recuperation du texte contenu dans le GtkEntry */
     sText = gtk_entry_get_text(GTK_ENTRY(pEntry));
@@ -157,53 +160,20 @@ void on_activate_entry(GtkWidget *pEntry, gpointer data)
 
     gtk_label_set_text(GTK_LABEL((GtkWidget*)data), sText);
 
-CURL *curl;
-  CURLcode res;
+  CURL *curl = curl_easy_init();
+    if (curl){
+        CURLcode res;
+        curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, FALSE);
+        curl_easy_setopt(curl, CURLOPT_URL, "https://fr.openfoodfacts.org/api/v0/produit/3029330003533.json");
 
-  curl_global_init(CURL_GLOBAL_DEFAULT);
-
-  curl = curl_easy_init();
-  if(curl) {
-    curl_easy_setopt(curl, CURLOPT_URL, "https://google.fr");
-
-#ifdef SKIP_PEER_VERIFICATION
-    /*
-     * If you want to connect to a site who isn't using a certificate that is
-     * signed by one of the certs in the CA bundle you have, you can skip the
-     * verification of the server's certificate. This makes the connection
-     * A LOT LESS SECURE.
-     *
-     * If you have a CA cert for the server stored someplace else than in the
-     * default bundle, then the CURLOPT_CAPATH option might come handy for
-     * you.
-     */
-    curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 0L);
-#endif
-
-#ifdef SKIP_HOSTNAME_VERIFICATION
-    /*
-     * If the site you're connecting to uses a different host name that what
-     * they have mentioned in their server certificate's commonName (or
-     * subjectAltName) fields, libcurl will refuse to connect. You can skip
-     * this check, but this will make the connection less secure.
-     */
-    curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, 0L);
-#endif
-
-    /* Perform the request, res will get the return code */
-    res = curl_easy_perform(curl);
-    /* Check for errors */
-    if(res != CURLE_OK)
+        res = curl_easy_perform(curl);
+         if(res != CURLE_OK)
       fprintf(stderr, "curl_easy_perform() failed: %s\n",
               curl_easy_strerror(res));
-
-    /* always cleanup */
-    curl_easy_cleanup(curl);
-  }
-
-  curl_global_cleanup();
-
-  return 0;
+        curl_easy_cleanup(curl);
+        //system("start  https://fr.openfoodfacts.org/api/v0/produit/3029330003533.json");
+    }
+    return 0;
 
 }
 
