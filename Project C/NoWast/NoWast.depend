@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1552422130 source:c:\users\nashad\desktop\projetannuel\project c\nowast\main.c
+1552643702 source:c:\users\nashad\desktop\projetannuel\project c\nowast\main.c
 	<stdio.h>
 	<gtk/gtk.h>
 	<openssl/ssl.h>

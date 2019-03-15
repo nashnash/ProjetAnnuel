@@ -2,9 +2,10 @@
 #include <gtk/gtk.h>
 #include <openssl/ssl.h>
 #include <curl/curl.h>
+//#include "Library/cJSON/cJSON.h"
 
-#define URL_FORMAT "https://%s.openfoodfacts.org/cgi/search.pl?search_terms=%s&search_simple=1&jqm=1"
-#define URL_SIZE 256
+//#define URL_FORMAT "https://%s.openfoodfacts.org/cgi/search.pl?search_terms=%s&search_simple=1&jqm=1"
+//#define URL_SIZE 256
 void on_activate_entry(GtkWidget *pEntry, gpointer data);
 void on_copier_button(GtkWidget *pButton, gpointer data);
 
@@ -89,8 +90,8 @@ GtkWidget *pButton;
   Window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
     /* On ajoute un espace de 5 sur les bords de la fenetre */
     gtk_container_set_border_width(GTK_CONTAINER(Window), 5);
-    gtk_window_set_title(GTK_WINDOW(Window), "GtkEntry");
-    gtk_window_set_default_size(GTK_WINDOW(Window), 320, 200);
+    gtk_window_set_title(GTK_WINDOW(Window), "NoWaste");
+    gtk_window_set_default_size(GTK_WINDOW(Window), 500, 500);
 
 
     g_signal_connect(G_OBJECT(Window), "destroy", G_CALLBACK(gtk_main_quit), NULL);
@@ -150,13 +151,13 @@ void on_activate_entry(GtkWidget *pEntry, gpointer data)
     const gchar *sText1;
     const gchar *sText2;
 
-    sText = "https://fr.openfoodfacts.org/api/v0/produit/";
-
 
     /* Recuperation du texte contenu dans le GtkEntry */
     sText = gtk_entry_get_text(GTK_ENTRY(pEntry));
 
     /* Modification du texte contenu dans le GtkLabel */
+
+        printf("%s", sText);
 
     gtk_label_set_text(GTK_LABEL((GtkWidget*)data), sText);
 
@@ -164,7 +165,12 @@ void on_activate_entry(GtkWidget *pEntry, gpointer data)
     if (curl){
         CURLcode res;
         curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, FALSE);
-        curl_easy_setopt(curl, CURLOPT_URL, "https://fr.openfoodfacts.org/api/v0/produit/3029330003533.json");
+        char * urlBase = "https://fr.openfoodfacts.org/api/v0/produit/";
+        char * newUrl = malloc(strlen(urlBase) + strlen(sText) + 1);
+        sprintf(newUrl, "%s%s", urlBase, sText);
+        printf("%s", newUrl);
+        curl_easy_setopt(curl, CURLOPT_URL, newUrl);
+        printf(sText);
 
         res = curl_easy_perform(curl);
          if(res != CURLE_OK)
