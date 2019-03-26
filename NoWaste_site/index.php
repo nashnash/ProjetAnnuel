@@ -23,7 +23,7 @@
                         <div class="heading-block topmargin">
                             <h1>Bienvenue sur FightFoodWaste.<br>Évitons le gaspillage ensemble.</h1>
                         </div>
-                        <p class="lead">Create a website that you are gonna be proud of. Be it Business, Portfolio, Agency, Photography, eCommerce &amp; much more.</p>
+                        <p class="lead">Donnez et partagez dès aujourd'hui tous vos produits commerciaux et Scannez les.</p>
                     </div>
 
                     <div class="col-xl-7">
@@ -46,17 +46,15 @@
                         <div class="col-lg-4 bottommargin">
                             <i class="i-plain color i-large icon-line2-screen-desktop inline-block" style="margin-bottom: 15px;"></i>
                             <div class="heading-block nobottomborder" style="margin-bottom: 15px;">
-                                <span class="before-heading">Scalable on Devices.</span>
-                                <h4>Responsive &amp; Retina</h4>
+                                <h4>Simple d'utilisation</h4>
                             </div>
-                            <p>Employment respond committed meaningful fight against oppression social challenges rural legal aid governance. Meaningful work, implementation, process cooperation, campaign inspire.</p>
+                            <p>Donner vos produit n'a jamais été aussi simple,</p>
                         </div>
 
                         <div class="col-lg-4 bottommargin">
                             <i class="i-plain color i-large icon-line2-energy inline-block" style="margin-bottom: 15px;"></i>
                             <div class="heading-block nobottomborder" style="margin-bottom: 15px;">
-                                <span class="before-heading">Smartly Coded &amp; Maintained.</span>
-                                <h4>Powerful Performance</h4>
+                                <h4>Rapide</h4>
                             </div>
                             <p>Medecins du Monde Jane Addams reduce child mortality challenges Ford Foundation. Diversification shifting landscape advocate pathway to a better life rights international. Assessment.</p>
                         </div>
@@ -64,8 +62,7 @@
                         <div class="col-lg-4 bottommargin">
                             <i class="i-plain color i-large icon-line2-equalizer inline-block" style="margin-bottom: 15px;"></i>
                             <div class="heading-block nobottomborder" style="margin-bottom: 15px;">
-                                <span class="before-heading">Flexible &amp; Customizable.</span>
-                                <h4>Truly Multi-Purpose</h4>
+                                <h4>Un système de gestion client/commerciaux</h4>
                             </div>
                             <p>Democracy inspire breakthroughs, Rosa Parks; inspiration raise awareness natural resources. Governance impact; transformative donation philanthropy, respect reproductive.</p>
                         </div>
@@ -78,7 +75,7 @@
             <div class="container clearfix">
 
                 <div class="heading-block topmargin-lg center">
-                    <h2>Even more Feature Rich</h2>
+                    <h2>Donner ces produits n'a jamais été aussi simple.</h2>
                     <span class="divcenter">Philanthropy convener livelihoods, initiative end hunger gender rights local. John Lennon storytelling; advocate, altruism impact catalyst.</span>
                 </div>
 

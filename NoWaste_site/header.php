@@ -72,16 +72,16 @@
             <nav id="primary-menu" class="dark">
 
                 <ul>
-                    <li class="current"><a href="index.html"><div>Accueil</div></a>
+                    <li class="current"><a href="index.php"><div>Accueil</div></a>
 
                     <li><a href="#"><div>Qui sommes-nous ?</div></a>
                         <ul>
-                            <li><a href="#"><div><i class="icon-stack"></i>Concept</div></a>
+                            <li><a href="concept.php"><div><i class="icon-stack"></i>Concept</div></a>
 
                             </li>
 
 
-                            <li><a href="contact.html"><div><i class="icon-envelope-alt"></i>Présentation de l'équipe</div></a>
+                            <li><a href="equipe.php"><div><i class="icon-envelope-alt"></i>Présentation de l'équipe</div></a>
 
                             </li>
 
@@ -90,7 +90,7 @@
 
                     <li><a href="#"><div>Support / FAQ</div></a>
                         <ul>
-                            <li><a href="#"><div><i class="icon-stack"></i>Question / Réponse</div></a>
+                            <li><a href="FAQ.php"><div><i class="icon-stack"></i>Question / Réponse</div></a>
 
                             </li>
 
@@ -104,7 +104,7 @@
 
 
 
-                    <li class="mega-menu"><a href="#"><div>Contactez-nous</div></a>
+                    <li class="mega-menu"><a href="contact.php"><div>Contactez-nous</div></a>
 
                     </li>
 
@@ -113,8 +113,8 @@
                 </ul>
 
                 <div id="top-header-buttons" class="d-none d-md-block">
-                    <a href="#" class="button button-3d button-small button-rounded">Inscrivez-vous</a>
-                    <a href="#">Se connecter<i class="icon-caret-right" style="position: relative; top: 2px; margin-left:3px;"></i></a>
+                    <a href="connexion.php" class="button button-3d button-small button-rounded">Inscrivez-vous/Se connecter</a>
+                    <a href="#">session<i class="icon-caret-right" style="position: relative; top: 2px; margin-left:3px;"></i></a>
                 </div>
 
             </nav><!-- #primary-menu end -->
