@@ -67,6 +67,17 @@
                 <a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo"></a>
             </div><!-- #logo end -->
 
+            <div id="top-account" class="dropdown">
+                <a href="#" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="icon-user"></i>Compte</a>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                    <a class="dropdown-item tleft" href="#">Profile</a>
+                    <a class="dropdown-item tleft" href="#">Messages <span class="badge badge-pill badge-secondary fright" style="margin-top: 3px;">5</span></a>
+                    <a class="dropdown-item tleft" href="#">Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item tleft" href="#">Logout <i class="icon-signout"></i></a>
+                </ul>
+            </div>
+
             <!-- Primary Navigation
             ============================================= -->
             <nav id="primary-menu" class="dark">
@@ -95,7 +106,7 @@
                             </li>
 
 
-                            <li><a href="contact.html"><div><i class="icon-envelope-alt"></i>Contactez service client</div></a>
+                            <li><a href="contact.php"><div><i class="icon-envelope-alt"></i>Contactez service client</div></a>
 
                             </li>
 
@@ -114,7 +125,7 @@
 
                 <div id="top-header-buttons" class="d-none d-md-block">
                     <a href="connexion.php" class="button button-3d button-small button-rounded">Inscrivez-vous/Se connecter</a>
-                    <a href="#">session<i class="icon-caret-right" style="position: relative; top: 2px; margin-left:3px;"></i></a>
+
                 </div>
 
             </nav><!-- #primary-menu end -->
