@@ -1,9 +1,15 @@
 # depslib dependency file v1.0
-1552643702 source:c:\users\nashad\desktop\projetannuel\project c\nowast\main.c
+1554839747 source:c:\users\nashad\desktop\projetannuel\project c\nowast\main.c
 	<stdio.h>
 	<gtk/gtk.h>
 	<openssl/ssl.h>
 	<curl/curl.h>
+	"cJSON.h"
+	<unistd.h>
+	<sys/types.h>
+	<fcntl.h>
+	<stdlib.h>
+	<sys/stat.h>
 
 1551564745 source:c:\users\nashad\desktop\projetannuel\project c\nowast\subscribe.c
 	<stdlib.h>
@@ -49,4 +55,17 @@
 	"curl.h"
 
 1547554786 c:\users\nashad\desktop\projetannuel\project c\nowast\curl\include\curl\typecheck-gcc.h
+
+1552236430 source:c:\users\nashad\desktop\projetannuel\project c\nowast\cjson.c
+	<string.h>
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<limits.h>
+	<ctype.h>
+	<locale.h>
+	"cJSON.h"
+
+1544986009 c:\users\nashad\desktop\projetannuel\project c\nowast\cjson.h
+	<stddef.h>
 

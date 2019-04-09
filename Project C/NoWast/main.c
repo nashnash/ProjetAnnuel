@@ -2,6 +2,13 @@
 #include <gtk/gtk.h>
 #include <openssl/ssl.h>
 #include <curl/curl.h>
+#include "cJSON.h"
+#include <unistd.h>
+#include <sys/types.h>
+#include <fcntl.h>
+#include <stdlib.h>
+#include <sys/stat.h>
+
 //#include "Library/cJSON/cJSON.h"
 
 //#define URL_FORMAT "https://%s.openfoodfacts.org/cgi/search.pl?search_terms=%s&search_simple=1&jqm=1"
@@ -150,7 +157,8 @@ void on_activate_entry(GtkWidget *pEntry, gpointer data)
     const gchar *sText;
     const gchar *sText1;
     const gchar *sText2;
-
+    int fd;
+    char buf[10000];
 
     /* Recuperation du texte contenu dans le GtkEntry */
     sText = gtk_entry_get_text(GTK_ENTRY(pEntry));
@@ -170,14 +178,39 @@ void on_activate_entry(GtkWidget *pEntry, gpointer data)
         sprintf(newUrl, "%s%s", urlBase, sText);
         printf("%s", newUrl);
         curl_easy_setopt(curl, CURLOPT_URL, newUrl);
-        printf(sText);
 
-        res = curl_easy_perform(curl);
-         if(res != CURLE_OK)
+
+    FILE * fp = fopen("data.json", "w");
+	 curl_easy_setopt(curl,  CURLOPT_WRITEDATA, fp);
+	 curl_easy_setopt(curl,  CURLOPT_WRITEFUNCTION, fwrite);
+	 curl_easy_perform(curl);
+	 fclose(fp);
+	 curl_easy_cleanup(curl);
+         fd = open("test.html", O_RDONLY);
+         if (fd == -1)
+             {
+                 printf("error json \n");
+
+             }
+         read(fd, buf, 10000);
+
+         printf(buf);
+         free(buf);
+          //system("pause");
+
+
+
+
+
+      //  printf(sText);
+
+       // res = curl_easy_perform(curl);
+     /*    if(res != CURLE_OK)
       fprintf(stderr, "curl_easy_perform() failed: %s\n",
-              curl_easy_strerror(res));
-        curl_easy_cleanup(curl);
+              curl_easy_strerror(res));*/
+
         //system("start  https://fr.openfoodfacts.org/api/v0/produit/3029330003533.json");
+
     }
     return 0;
 
@@ -189,3 +222,4 @@ void on_copier_button(GtkWidget *pButton, gpointer data)
 
 
 }
+
