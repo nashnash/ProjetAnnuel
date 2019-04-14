@@ -142,7 +142,7 @@ int main(int argc, char **argv)
     gtk_window_set_title(GTK_WINDOW(Window), "NoWaste");
     gtk_window_set_default_size(GTK_WINDOW(Window), 500, 500);
 
-
+//
     g_signal_connect(G_OBJECT(Window), "destroy", G_CALLBACK(gtk_main_quit), NULL);
 
     pVBox = gtk_vbox_new(TRUE, 0);
