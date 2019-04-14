@@ -1019,6 +1019,8 @@ CJSON_PUBLIC(cJSON *) cJSON_ParseWithOpts(const char *value, const char **return
     item = cJSON_New_Item(&global_hooks);
     if (item == NULL) /* memory fail */
     {
+        //ici que ca pete !!!
+        printf("PLUS DE MEMOIRE??");
         goto fail;
     }
 
