@@ -1,3 +1,13 @@
+
+<?php
+
+require_once __DIR__ .'/database.php';
+require_once __DIR__ .'/validation.php';
+require_once __DIR__ .'/formulaire.php';
+
+
+
+?>
 <!DOCTYPE html>
 <html  lang="fr-FR">
 <head>
@@ -63,7 +73,7 @@
             <!-- Logo
             ============================================= -->
             <div id="logo">
-                <a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Canvas Logo"></a>
+                <a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo-dark.png" alt="Canvas Logo"></a>
                 <a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo"></a>
             </div><!-- #logo end -->
 
@@ -124,7 +134,8 @@
                 </ul>
 
                 <div id="top-header-buttons" class="d-none d-md-block">
-                    <a href="connexion.php" class="button button-3d button-small button-rounded">Inscrivez-vous/Se connecter</a>
+                    <a href="connexion.php" class="button button-3d button-small button-rounded">Se connecter</a>
+                    <a href="inscription.php" class="button button-3d button-small button-rounded">Inscrivez-vous</a>
 
                 </div>
 
